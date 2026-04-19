@@ -191,10 +191,12 @@ header {
                 height: 30px;
                 width: 100%;
                 resize: none;
+                padding: 0 10px;
             }
 
             textarea {
                 height: 100px;
+                padding: 10px 10px;
             }
 
             button {
@@ -203,7 +205,8 @@ header {
                 background-color: #384D48;
                 color: white;
                 font-size: 16px;
-                padding: 15px
+                padding: 15px;
+                cursor: pointer;
             }
         }
     }
