@@ -13,6 +13,8 @@
 header {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 100;
 
     p {
         font-family: "Klemer";
@@ -26,14 +28,17 @@ header {
         gap: 40px;
         font-size: 18px;
         opacity: 75%;
+        
+        li {
+            cursor: pointer;
+        }
     }
 }
 
 .first-section {
-    background-image: url("./img/background.webp");
+    background-image: url("./img/back-web.webp");
     background-size: cover;
     background-position: center;
-    opacity: 90%;
     background-repeat: no-repeat;
     padding: 60px 140px 0px 140px;
     height: 100vh;
@@ -49,23 +54,47 @@ header {
             font-family: "Klemer";
             font-size: 48px;
             color: #E2FFBD;
+            position: relative;
+            z-index: 100;
         }
 
         p {
             display: flex;
             font-size: 24px;
             color: #E2FFBD;
+            position: relative;
+            z-index: 100;
+        }
+    }
+
+    .character{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        max-height: 800px;
+        display: flex;
+        justify-content: end;
+        top: -300px;
+        z-index: 1;
+
+        img{
+            opacity: 85%;
+            height: 210%;
         }
     }
 }
 
 .second-section {
     padding: 60px 140px;
+    background-color: white;
+    position: relative;
+    z-index: 100;
 
     h2 {
         font-family: "Klemer";
         font-size: 32px;
         color: #4D6859;
+        
     }
 
     .second-section-content {
@@ -102,6 +131,8 @@ header {
 .third-section {
     padding: 60px 140px;
     background-color: #688072;
+    position: relative;
+    z-index: 100;
 
     .third-section-content {
         display: flex;
@@ -140,6 +171,10 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: white;
+    position: relative;
+    z-index: 200;
+
 
     .fourth-section-content {
         display: flex;
@@ -218,6 +253,8 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    position: relative;
+    z-index: 100;
 
     .footer-content {
         display: flex;

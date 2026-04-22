@@ -17,7 +17,7 @@
         <div id="smooth-content">
 
             <main>
-                <section class="first-section">
+                <section class="first-section" data-speed=".6">
 
                     <header>
                         <p>DOMINIQUE FERREIRA</p>
@@ -34,6 +34,10 @@
                     <div class="first-section-content">
                         <h1>DOMINIQUE FERREIRA</h1>
                         <p>Ilustration | Character Desing</p>
+
+                        <div class="character">
+                            <img src="./img/character.webp" alt="Character">
+                        </div>
                     </div>
 
                 </section>
@@ -111,25 +115,25 @@
                         </div>
 
                         <div class="fourth-section-content-form">
-                            <form action="">
-                                <label for="">
+                            <form id="formEmail" action="submit">
+                                <label for="name">
                                     <p>Your Full Name</p>
-                                    <input type="text">
+                                    <input id="name" name="name" type="text" required>
                                 </label>
 
-                                <label for="">
+                                <label for="email">
                                     <p>Your Best E-mail</p>
-                                    <input type="email">
+                                    <input id="email" name="email" type="email" required>
                                 </label>
 
-                                <label for="">
+                                <label for="regarding">
                                     <p>Whats this regarding?</p>
-                                    <input type="text">
+                                    <input id="regarding" name="regarding" type="text" required>
                                 </label>
 
-                                <label for="">
+                                <label for="message">
                                     <p>Your Message</p>
-                                    <textarea rows="999"></textarea>
+                                    <textarea id="message" rows="999" name="message" required></textarea>
                                 </label>
 
                                 <button>Submit</button>
@@ -164,6 +168,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 
 </body>
