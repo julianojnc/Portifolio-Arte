@@ -7,10 +7,10 @@
 
 @font-face {
     font-family: "Klemer";
-    src: url(fonte//Klemer\ Display\ DEMO.ttf);
+    src: url(../fonte//Klemer\ Display\ DEMO.ttf);
 }
 
-header {
+.header-home {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -31,12 +31,16 @@ header {
         
         li {
             cursor: pointer;
+
+            a{
+                color: black;
+            }
         }
     }
 }
 
 .first-section {
-    background-image: url("./img/back-web.webp");
+    background-image: url("../img/back-web.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,7 +90,7 @@ header {
 
 .second-section {
     padding: 60px 140px;
-    background-color: white;
+    background-color: #ECEFF1;
     position: relative;
     z-index: 100;
 
@@ -167,11 +171,11 @@ header {
 
 .fourth-section {
     padding: 60px 140px;
-    background-image: url(./img/background-form.webp);
+    background-image: url(../img/background-form.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #ECEFF1;
     position: relative;
     z-index: 200;
 
@@ -248,7 +252,7 @@ header {
 }
 
 footer {
-    background-image: url(./img/background-footer.webp);
+    background-image: url(../img/background-footer.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

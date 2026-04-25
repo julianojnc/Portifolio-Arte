@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
     </style>
     <title>Dominique Ferreira</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -17,14 +17,14 @@
         <div id="smooth-content">
 
             <main>
-                <section class="first-section" data-speed=".6">
+                <section class="first-section home" data-speed=".6">
 
-                    <header>
+                    <header class="header-home">
                         <p>DOMINIQUE FERREIRA</p>
 
                         <nav>
                             <ul>
-                                <li><u>Ilustration</u></li>
+                                <li><a href="./pages/illustration.html"><u>Illustration</u></a></li>
                                 <li><u>Character Desing</u></li>
                                 <li><u>Aboult</u></li>
                             </ul>
@@ -118,12 +118,12 @@
                             <form id="formEmail" action="submit">
                                 <label for="name">
                                     <p>Your Full Name</p>
-                                    <input id="name" name="name" type="text" required>
+                                    <input id="name" name="name" type="text" autocomplete=true required>
                                 </label>
 
                                 <label for="email">
                                     <p>Your Best E-mail</p>
-                                    <input id="email" name="email" type="email" required>
+                                    <input id="email" name="email" type="email" autocomplete=true required>
                                 </label>
 
                                 <label for="regarding">
@@ -168,8 +168,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="script.js"></script>
+    <script src="../scripts/animations/animations.js"></script>
+    <script src="./scripts/animations/animation-character.js"></script>
 
 </body>
 

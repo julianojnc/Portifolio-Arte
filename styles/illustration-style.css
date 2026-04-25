@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Klemer";
+    src: url(../fonte//Klemer\ Display\ DEMO.ttf);
+}
+
+.header-illustration {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-family: "Klemer";
+        font-size: 20px;
+        color: black;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        font-size: 18px;
+        opacity: 75%;
+
+        li {
+            cursor: pointer;
+
+            a {
+                color: black;
+            }
+        }
+    }
+}
+
+.first-section-illustration {
+    background-image: url(../img/background-illustration.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ECEFF1;
+    padding: 60px 140px 60px 140px;
+    position: relative;
+    z-index: 999;
+
+    .illustration {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+
+        .ilustration-content {
+            columns: 4;
+            column-gap: 20px;
+
+            .ilustration-content-card {
+                background-color: #384D48;
+                break-inside: avoid;
+                margin-bottom: 20px;
+                overflow: hidden;
+
+                .ilustration-content-img {
+                    width: 100%;
+                    display: block;
+                    cursor: pointer;
+                    opacity: 70%;
+                    transition: opacity 1.5s ease, transform 1s ease;
+                }
+
+                .ilustration-content-img:hover {
+                    opacity: 100%;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+}
